@@ -30,6 +30,9 @@ class FifthActivity : AppCompatActivity() {
             subtitle = "Ini adalah subtitle"
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
+
+            setHomeAsUpIndicator(R.drawable.outline_account_circle_24)
+
         }
 
         binding.btnWebView.setOnClickListener {

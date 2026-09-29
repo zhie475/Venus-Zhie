@@ -150,7 +150,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="WebView"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                app:icon="@drawable/outline_account_circle_24"
+                app:iconGravity="textEnd"/>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
