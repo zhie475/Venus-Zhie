@@ -14,17 +14,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Venuszhierly">
 
-        <!-- MainActivity sebagai halaman utama -->
+        <!-- Splash Screen: halaman pertama -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:name=".pertemuan6.SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- AuthActivity: halaman login -->
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- MainActivity: halaman utama setelah login -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
 
         <!-- Activity Pertemuan 2 -->
         <activity
@@ -47,6 +57,8 @@
             android:name=".pertemuan4.FourthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
+        <!-- Activity Pertemuan 5 -->
         <activity
             android:name=".pertemuan_5.FifthActivity"
             android:exported="false"
@@ -55,6 +67,7 @@
             android:name=".pertemuan_5.WebViewActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>

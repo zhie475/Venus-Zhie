@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="pink_primary">#EC6A9C</color>
+    <color name="pink_container">#FFD9E6</color>
+    <color name="pink_bg">#FFF3F7</color>
     <color name="white">#FFFFFF</color>
-    <color name="ping">#D35C85</color>
 </resources>
