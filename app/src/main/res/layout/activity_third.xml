@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
-    tools:context=".pertemuan3.ThirdActivity">
+    tools:context=".Home.pertemuan3.ThirdActivity">
 
     <EditText
         android:id="@+id/inputNoTujuan"

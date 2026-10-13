@@ -8,7 +8,7 @@
     android:gravity="center"
     android:padding="20dp"
     android:orientation="vertical"
-    tools:context=".pertemuan3.ThirdResultActivity">
+    tools:context=".Home.pertemuan3.ThirdResultActivity">
 
     <TextView
         android:layout_width="wrap_content"

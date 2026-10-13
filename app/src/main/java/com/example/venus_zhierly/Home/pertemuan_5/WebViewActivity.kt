@@ -1,4 +1,4 @@
-package com.example.venus_zhierly.pertemuan_5
+package com.example.venus_zhierly.Home.pertemuan_5
 
 import android.os.Bundle
 import android.webkit.WebViewClient

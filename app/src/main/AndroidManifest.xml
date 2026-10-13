@@ -14,9 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Venuszhierly">
 
-        <!-- Splash Screen: halaman pertama -->
+        <!-- Splash: halaman pertama -->
         <activity
-            android:name=".pertemuan6.SplashScreenActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,49 +24,46 @@
             </intent-filter>
         </activity>
 
-        <!-- AuthActivity: halaman login -->
         <activity
             android:name=".AuthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- MainActivity: halaman utama setelah login -->
         <activity
-            android:name=".MainActivity"
+            android:name=".BaseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Home.pertemuan2.SecondActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- Activity Pertemuan 2 -->
         <activity
-            android:name=".pertemuan2.SecondActivity"
+            android:name=".Home.pertemuan3.ThirdActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Home.pertemuan3.ThirdResultActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- Activity Pertemuan 3 -->
         <activity
-            android:name=".pertemuan3.ThirdActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".pertemuan3.ThirdResultActivity"
+            android:name=".Home.pertemuan4.FourthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- Activity Pertemuan 4 -->
         <activity
-            android:name=".pertemuan4.FourthActivity"
+            android:name=".Home.pertemuan_5.FifthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Home.pertemuan_5.WebViewActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
-        <!-- Activity Pertemuan 5 -->
         <activity
-            android:name=".pertemuan_5.FifthActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".pertemuan_5.WebViewActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:name=".Home.pertemuan6.SixthActivity"
+            android:exported="false" />
 
     </application>
 

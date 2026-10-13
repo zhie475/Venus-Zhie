@@ -1,4 +1,4 @@
-package com.example.venus_zhierly.pertemuan_5
+package com.example.venus_zhierly.Home.pertemuan_5
 
 import android.content.Intent
 import android.os.Bundle
@@ -25,14 +25,14 @@ class FifthActivity : AppCompatActivity() {
             insets
         }
         setSupportActionBar(binding.toolbar)
+
         supportActionBar?.apply {
             title = "Activity Fifth"
             subtitle = "Ini adalah subtitle"
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
 
-            setHomeAsUpIndicator(R.drawable.outline_account_circle_24)
-
+            setHomeAsUpIndicator(R.drawable.outline_arrow_left_alt_24)
         }
 
         binding.btnWebView.setOnClickListener {
