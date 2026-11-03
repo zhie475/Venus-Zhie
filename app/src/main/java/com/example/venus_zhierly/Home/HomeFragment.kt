@@ -12,7 +12,8 @@ import androidx.fragment.app.Fragment
 import com.example.venus_zhierly.Home.pertemuan2.SecondActivity
 import com.example.venus_zhierly.Home.pertemuan3.ThirdActivity
 import com.example.venus_zhierly.Home.pertemuan4.FourthActivity
-import com.example.venus_zhierly.Home.pertemuan6.SixthActivity
+import com.example.venus_zhierly.Home.pertemuan7.SixthActivity
+import com.example.venus_zhierly.Home.pertemuan_10.TenthActivity
 import com.example.venus_zhierly.Home.pertemuan_5.FifthActivity
 import com.example.venus_zhierly.databinding.FragmentHomeBinding
 
@@ -65,6 +66,10 @@ class HomeFragment : Fragment() {
 
         binding.btnToSixth.setOnClickListener {
             startActivity(Intent(requireContext(), SixthActivity::class.java))
+        }
+
+        binding.btnToTenth.setOnClickListener {
+            startActivity(Intent(requireContext(), TenthActivity::class.java))
         }
 
         // Logout

@@ -62,7 +62,12 @@
             android:windowSoftInputMode="adjustResize" />
 
         <activity
-            android:name=".Home.pertemuan6.SixthActivity"
+            android:name=".Home.pertemuan7.SixthActivity"
+            android:exported="false" />
+
+        <!-- Pertemuan 10 -->
+        <activity
+            android:name=".Home.pertemuan_10.TenthActivity"
             android:exported="false" />
 
     </application>
