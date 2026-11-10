@@ -1,54 +1,71 @@
 package com.example.venus_zhierly.Message
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import com.example.venus_zhierly.databinding.FragmentMessageBinding
+import com.example.venus_zhierly.Home.pertemuan_11.TutorialMessageActivity
+import com.example.venus_zhierly.R
 
 class MessageFragment : Fragment() {
-    private var _binding: FragmentMessageBinding? = null
-    private val binding get() = _binding!!
 
     private val messageList = listOf(
-        MessageModel("Alya", "Halo! Apa kabar?", "https://i.pravatar.cc/150?img=1", "20"),
-        MessageModel("Budi", "Sudah makan?", "https://i.pravatar.cc/150?img=2", "21"),
-        MessageModel("Citra", "Jangan lupa tugasnya ya!", "https://i.pravatar.cc/150?img=3", "22"),
-        MessageModel("Dika", "Besok kita rapat jam 9", "https://i.pravatar.cc/150?img=4", "23"),
-        MessageModel("Eka", "Nice job kemarin!", "https://i.pravatar.cc/150?img=5", "24"),
-        MessageModel("Fajar", "Lagi ngapain?", "https://i.pravatar.cc/150?img=6", "25"),
-        MessageModel("Gita", "Boleh minta tolong?", "https://i.pravatar.cc/150?img=7", "26"),
-        MessageModel("Hana", "Lihat email ya", "https://i.pravatar.cc/150?img=8", "27"),
-        MessageModel("Irfan", "Oke noted", "https://i.pravatar.cc/150?img=9", "28"),
-        MessageModel("Joko", "Sampai jumpa besok", "https://i.pravatar.cc/150?img=10", "29")
+        MessageModel("Alya", "Halo! Apa kabar?", "https://i.pravatar.cc/150?img=1", "21:00"),
+        MessageModel("Budi", "Sudah makan?", "https://i.pravatar.cc/150?img=2", "22:00"),
+        MessageModel("Citra", "Jangan lupa tugasnya ya!", "https://i.pravatar.cc/150?img=3", "20:00"),
+        MessageModel("Dika", "Besok kita rapat jam 9", "https://i.pravatar.cc/150?img=4", "23:00"),
+        MessageModel("Eka", "Nice job kemarin!", "https://i.pravatar.cc/150?img=5", "21:00"),
+        MessageModel("Fajar", "Lagi ngapain?", "https://i.pravatar.cc/150?img=6", "24:00"),
+        MessageModel("Gita", "Boleh minta tolong?", "https://i.pravatar.cc/150?img=7", "20:00"),
+        MessageModel("Hana", "Lihat email ya", "https://i.pravatar.cc/150?img=8", "22:00"),
+        MessageModel("Irfan", "Oke noted", "https://i.pravatar.cc/150?img=9", "25:00"),
+        MessageModel("Joko", "Sampai jumpa besok", "https://i.pravatar.cc/150?img=10", "23:00")
     )
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentMessageBinding.inflate(inflater, container, false)
-        return binding.root
+        return inflater.inflate(R.layout.fragment_message, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        /** Toolbar */
-        (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
-        (requireActivity() as AppCompatActivity).supportActionBar?.apply {
+        // Setup Toolbar
+        val activity = requireActivity() as AppCompatActivity
+        activity.setSupportActionBar(view.findViewById<Toolbar>(R.id.toolbar))
+        activity.supportActionBar?.apply {
             title = "Message"
         }
 
-        // Pasang custom adapter
-        val adapter = MessageAdapter(requireContext(), messageList)
-        binding.listMessageItems.adapter = adapter
+        setHasOptionsMenu(true)
+
+        // Setup Custom Adapter
+        val listView = view.findViewById<ListView>(R.id.listMessageItems)
+        listView.adapter = MessageAdapter(requireContext(), messageList)
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.message_toolbar_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_tutorial -> {
+                startActivity(Intent(requireContext(), TutorialMessageActivity::class.java))
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }

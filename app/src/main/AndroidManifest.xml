@@ -20,6 +20,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -28,16 +29,13 @@
             android:name=".AuthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".BaseActivity"
             android:exported="false" />
-
         <activity
             android:name=".Home.pertemuan2.SecondActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".Home.pertemuan3.ThirdActivity"
             android:exported="false"
@@ -46,12 +44,10 @@
             android:name=".Home.pertemuan3.ThirdResultActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".Home.pertemuan4.FourthActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".Home.pertemuan_5.FifthActivity"
             android:exported="false"
@@ -61,6 +57,7 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
+        <!-- Pertemuan 7 -->
         <activity
             android:name=".Home.pertemuan7.SixthActivity"
             android:exported="false" />
@@ -68,8 +65,18 @@
         <!-- Pertemuan 10 -->
         <activity
             android:name=".Home.pertemuan_10.TenthActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
 
+        <!-- Pertemuan 11 (TabLayout & Tutorial Message) -->
+        <activity
+            android:name=".Home.pertemuan_11.EleventhActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Home.pertemuan_11.TutorialMessageActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="pink_primary">#EC6A9C</color>
-    <color name="pink_container">#FFD9E6</color>
-    <color name="pink_bg">#FFF3F7</color>
-    <color name="white">#FFFFFF</color>
+    <!-- Warna Dasar -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Palet Pink Sesuai Gambar Pertemuan 11 -->
+    <color name="pink_primary">#EC6490</color>       <!-- Rose Pink (Warna Header TopBar & Tab) -->
+    <color name="pink_container">#FCE3EC</color>     <!-- Soft Pink (Warna Card / Container) -->
+    <color name="pink_bg">#FAF0F3</color>            <!-- Background Layar Soft Off-White Pink -->
+
+    <!-- Palet Tutorial & Aksen (dp_*) -->
+    <color name="dp_header">#FCE3EC</color>
+    <color name="dp_chip">#F79CB9</color>
+    <color name="dp_background">#FAF0F3</color>
+    <color name="dp_text">#7A2542</color>            <!-- Maroon lembut untuk teks -->
+    <color name="dp_text_soft">#B55273</color>
+    <color name="dp_accent">#EC6490</color>          <!-- Indikator & aksen -->
 </resources>

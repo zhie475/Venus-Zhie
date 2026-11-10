@@ -15,6 +15,7 @@ import com.example.venus_zhierly.Home.pertemuan4.FourthActivity
 import com.example.venus_zhierly.Home.pertemuan7.SixthActivity
 import com.example.venus_zhierly.Home.pertemuan_10.TenthActivity
 import com.example.venus_zhierly.Home.pertemuan_5.FifthActivity
+import com.example.venus_zhierly.Home.pertemuan_11.EleventhActivity
 import com.example.venus_zhierly.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -70,6 +71,10 @@ class HomeFragment : Fragment() {
 
         binding.btnToTenth.setOnClickListener {
             startActivity(Intent(requireContext(), TenthActivity::class.java))
+        }
+
+        binding.btnToEleventh.setOnClickListener {
+            startActivity(Intent(requireContext(), EleventhActivity::class.java))
         }
 
         // Logout
