@@ -14,8 +14,9 @@ import com.example.venus_zhierly.Home.pertemuan3.ThirdActivity
 import com.example.venus_zhierly.Home.pertemuan4.FourthActivity
 import com.example.venus_zhierly.Home.pertemuan7.SixthActivity
 import com.example.venus_zhierly.Home.pertemuan_10.TenthActivity
-import com.example.venus_zhierly.Home.pertemuan_5.FifthActivity
 import com.example.venus_zhierly.Home.pertemuan_11.EleventhActivity
+import com.example.venus_zhierly.Home.pertemuan_12.TwelfthActivity // BARU
+import com.example.venus_zhierly.Home.pertemuan_5.FifthActivity
 import com.example.venus_zhierly.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -75,6 +76,11 @@ class HomeFragment : Fragment() {
 
         binding.btnToEleventh.setOnClickListener {
             startActivity(Intent(requireContext(), EleventhActivity::class.java))
+        }
+
+        // BARU: Pertemuan 12
+        binding.btnToTwelfth.setOnClickListener {
+            startActivity(Intent(requireContext(), TwelfthActivity::class.java))
         }
 
         // Logout

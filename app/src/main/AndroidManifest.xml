@@ -24,7 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".AuthActivity"
             android:exported="false"
@@ -77,6 +76,11 @@
             android:name=".Home.pertemuan_11.TutorialMessageActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <!-- Pertemuan 12 (Retrofit: Cat Fact & Galeri) -->
+        <activity
+            android:name=".Home.pertemuan_12.TwelfthActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
